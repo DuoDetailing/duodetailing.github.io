@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact &amp; Booking | Duo Detailing</title>
+  <meta name="description" content="Request a free quote or book an auto detail with Duo Detailing in Hoboken or Long Island.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="container nav">
+      <a href="index.html" class="logo">Duo<span>Detailing</span></a>
+      <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰ Menu</button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="areas.html">Service Areas</a></li>
+        <li><a href="contact.html" class="btn btn-primary active" style="padding:9px 20px;color:#04121a">Book Now</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h1>Get your free quote</h1>
+        <p class="lead" style="margin-top:14px">Tell us about your car and we'll get back to you quickly.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="grid grid-2" style="margin-top:0;align-items:start">
+          <div class="card">
+            <!--
+              FORM SETUP: GitHub Pages can't process forms by itself.
+              1. Sign up free at https://formspree.io and create a form.
+              2. Replace YOUR_FORM_ID below with the ID Formspree gives you.
+            -->
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+              <div class="row-2">
+                <label>Name <input type="text" name="name" required></label>
+                <label>Phone <input type="tel" name="phone"></label>
+              </div>
+              <label>Email <input type="email" name="email" required></label>
+              <div class="row-2">
+                <label>Location
+                  <select name="location">
+                    <option>Hoboken / Hudson County, NJ</option>
+                    <option>Long Island, NY</option>
+                  </select>
+                </label>
+                <label>Service
+                  <select name="service">
+                    <option>Express Detail</option>
+                    <option>Full Detail</option>
+                    <option>Premium Protection</option>
+                    <option>Ceramic Coating</option>
+                    <option>Not sure yet</option>
+                  </select>
+                </label>
+              </div>
+              <label>Vehicle (year, make, model) <input type="text" name="vehicle"></label>
+              <label>Anything else we should know? <textarea name="message"></textarea></label>
+              <button type="submit" class="btn btn-primary">Send Request</button>
+              <p class="note">We'll only use your info to reply to your request.</p>
+            </form>
+          </div>
+
+          <div>
+            <div class="card">
+              <h3>Reach us directly</h3>
+              <ul style="list-style:none;margin:12px 0 0">
+                <li>📞 (555) 555-0123</li>
+                <li>✉️ hello@yourdomain.com</li>
+                <li>🕗 Mon–Sat, 8am–6pm</li>
+                <li>📸 @yourinstagram</li>
+              </ul>
+            </div>
+            <div class="card" style="margin-top:22px">
+              <h3>Where we work</h3>
+              <p>Hoboken, NJ and Long Island, NY. <a href="areas.html">See service areas</a>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="container">
+      <div class="foot-grid">
+        <div>
+          <a href="index.html" class="logo">Duo<span>Detailing</span></a>
+          <p style="margin-top:10px">Premium auto detailing in Hoboken, NJ and Long Island, NY.</p>
+        </div>
+        <div>
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="areas.html">Service Areas</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>(555) 555-0123</li>
+            <li>hello@yourdomain.com</li>
+            <li>Mon–Sat, 8am–6pm</li>
+          </ul>
+        </div>
+      </div>
+      <p class="copy">© <span id="year">2026</span> Duo Detailing. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
